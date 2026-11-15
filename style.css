@@ -1,0 +1,172 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #10243a;
+  color: white;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+/* Home Section */
+#home {
+  background-color: #153e63;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#home h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+#home h2 {
+  color: #00d4ff;
+  margin-bottom: 20px;
+}
+
+#home p {
+  max-width: 650px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: white;
+  padding: 12px 25px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #008fa1;
+}
+
+/* Other Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 25px;
+  color: #153e63;
+}
+
+#about p {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Skills */
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills {
+  background-color: white;
+  padding: 25px;
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgb(0, 0, 0, 0.1);
+}
+
+.skills h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Education and Projects */
+.project {
+  background-color: white;
+  padding: 25px;
+  margin: 15px auto;
+  max-width: 650px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgb(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  color: #007bff;
+}
+
+/* Contact */
+#contact {
+  background-color: #e5edf5;
+}
+
+/* Footer */
+footer {
+  background-color: #10243a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 780px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  #home h1 {
+    font-size: 30px;
+  }
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills {
+    width: 90%;
+  }
+}
